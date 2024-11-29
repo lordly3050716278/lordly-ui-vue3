@@ -1,0 +1,23 @@
+.lordly-click-ripple {
+    position: fixed;
+    z-index: var(--lordly-z-index-max);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    border: 1px solid;
+    border-color: var(--lordly-color-primary-light-1) var(--lordly-color-success-light-1) var(--lordly-color-danger-light-1) var(--lordly-color-info-light-1);
+    animation: click-ripple var(--lordly-t-fast) forwards;
+}
+
+@keyframes click-ripple {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

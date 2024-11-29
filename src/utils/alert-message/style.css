@@ -1,0 +1,105 @@
+#lordly-alert-msg-container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden auto;
+    z-index: var(--lordly-z-index-max);
+    pointer-events: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#lordly-alert-msg-container::-webkit-scrollbar {
+    display: none;
+}
+
+.lordly-alert-msg-box {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 0px 5px var(--lordly-color-black-light-3);
+}
+
+.lordly-alert-msg-box__icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    font-size: var(--lordly-font-size-huge);
+}
+
+.lordly-alert-msg-box__content {
+    max-width: 240px;
+    word-break: break-word;
+    flex: 1;
+    font-size: var(--lordly-font-size-normal);
+    color: var(--lordly-color-black-light-3);
+}
+
+.lordly-alert-msg-box.primary>.lordly-alert-msg-box__icon {
+    color: var(--lordly-color-primary);
+}
+
+.lordly-alert-msg-box.success>.lordly-alert-msg-box__icon {
+    color: var(--lordly-color-success);
+}
+
+.lordly-alert-msg-box.error>.lordly-alert-msg-box__icon {
+    color: var(--lordly-color-error);
+}
+
+.lordly-alert-msg-box.danger>.lordly-alert-msg-box__icon {
+    color: var(--lordly-color-danger);
+}
+
+.lordly-alert-msg-box.warning>.lordly-alert-msg-box__icon {
+    color: var(--lordly-color-warning);
+}
+
+.lordly-alert-msg-box.info>.lordly-alert-msg-box__icon {
+    color: var(--lordly-color-info);
+}
+
+.lordly-alert-msg-box.show {
+    animation: box-in var(--lordly-t-fast) forwards;
+}
+
+.lordly-alert-msg-box.hide {
+    animation: box-out var(--lordly-t-fast) forwards;
+}
+
+@keyframes box-in {
+    0% {
+        margin-top: calc(var(--h) + 10px);
+        opacity: 0;
+        transform: scale(.9);
+    }
+
+    100% {
+        margin-top: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes box-out {
+    0% {
+        margin-top: 0;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        margin-top: calc(-1 * var(--h) - 10px);
+        opacity: 0;
+        transform: scale(.9);
+    }
+}
