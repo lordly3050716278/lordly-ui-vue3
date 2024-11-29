@@ -23,6 +23,7 @@
     align-items: center;
     gap: 5px;
     box-shadow: 0px 0px 5px var(--lordly-color-black-light-3);
+    background-color: var(--lordly-color-white);
 }
 
 .lordly-alert-msg-box__icon {
