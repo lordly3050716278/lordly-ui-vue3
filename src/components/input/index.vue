@@ -75,7 +75,6 @@ function togglePassword() {
     box-sizing: border-box;
     border: 1px solid var(--lordly-color-white-dark-1);
     background-color: var(--lordly-color-white-dark-1);
-    border-radius: 5px;
     padding: 5px 10px;
     font-size: var(--lordly-font-size-normal);
     transition: var(--lordly-t-fast);

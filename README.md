@@ -23,8 +23,16 @@ app.use(LordlyUI)
 lordly-ui-vue3/
 ├── src/                              # 源代码
 |   ├── components/                   # 组件
+|   |   ├── backdrop/                 # backdrop 组件
 |   |   ├── button/                   # button 组件
 |   |   ├── checkbox/                 # checkbox 组件
+|   |   ├── dialog/                   # dialog 组件
+|   |   ├── drawer/                   # drawer 组件
+|   |   ├── form/                     # form 组件
+|   |   ├── form-item/                # form-item 组件
+|   |   ├── icon/                     # icon 组件
+|   |   ├── input/                    # input 组件
+|   |   └── select/                   # select 组件
 |   |   
 |   ├── directives/                   # 指令
 |   |   └── loading/                  # loading 指令

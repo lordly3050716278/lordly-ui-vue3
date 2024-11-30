@@ -9,6 +9,18 @@ import LyCheckbox from './components/checkbox'
 import LyIcon from './components/icon'
 // input
 import LyInput from './components/input'
+// backdrop
+import LyBackdrop from './components/backdrop'
+// dialog
+import LyDialog from './components/dialog'
+// drawer
+import LyDrawer from './components/drawer'
+// form
+import LyForm from './components/form'
+// form-item
+import LyFormItem from './components/form-item'
+// select
+import LySelect from './components/select'
 
 // loading 指令
 import VLoading from './directives/loading'
@@ -25,6 +37,12 @@ export {
     LyCheckbox,
     LyIcon,
     LyInput,
+    LyBackdrop,
+    LyDialog,
+    LyDrawer,
+    LyForm,
+    LyFormItem,
+    LySelect,
 
     // 指令...
     VLoading,
@@ -42,6 +60,12 @@ export default {
         app.component('LyCheckbox', LyCheckbox)
         app.component('LyIcon', LyIcon)
         app.component('LyInput', LyInput)
+        app.component('LyBackdrop', LyBackdrop)
+        app.component('LyDialog', LyDialog)
+        app.component('LyDrawer', LyDrawer)
+        app.component('LyForm', LyForm)
+        app.component('LyFormItem', LyFormItem)
+        app.component('LySelect', LySelect)
 
         // 注册 loading 指令
         app.directive('loading', VLoading)
