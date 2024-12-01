@@ -36,7 +36,7 @@ async function alertMessage(message, type = 'primary', duration = 2000) {
 
 // 初始化容器
 function initContainer() {
-    const id = 'lordly-alert-msg-container'
+    const id = 'lordly-message-container'
     if (document.body.querySelector(`#${id} `)) return
     const container = document.createElement('div')
     container.id = id
@@ -46,18 +46,18 @@ function initContainer() {
 // 创建消息盒子
 function createAlertBox(message, type) {
     const alertBox = document.createElement('div')
-    alertBox.classList.add('lordly-alert-msg-box', type)
+    alertBox.classList.add('lordly-message-box', type)
 
     const icon = document.createElement('i')
-    icon.classList.add('lordly-alert-msg-box__icon')
+    icon.classList.add('lordly-message-box__icon')
     icon.innerHTML = icons[type]
 
     const content = document.createElement('div')
-    content.classList.add('lordly-alert-msg-box__content')
+    content.classList.add('lordly-message-box__content')
     content.textContent = message
 
     alertBox.append(icon, content)
-    document.querySelector('#lordly-alert-msg-container').append(alertBox)
+    document.querySelector('#lordly-message-container').append(alertBox)
 
     alertBox.style.setProperty('--h', alertBox.offsetHeight + 'px')
 
@@ -79,7 +79,7 @@ function removeAlertBox(alertBox) {
     alertBox.onanimationend = alertBox.remove
 }
 
-export const AlertMessage = {
+export const LyMessage = {
     primary: (message, duration) => alertMessage(message, 'primary', duration),
     success: (message, duration) => alertMessage(message, 'success', duration),
     error: (message, duration) => alertMessage(message, 'error', duration),

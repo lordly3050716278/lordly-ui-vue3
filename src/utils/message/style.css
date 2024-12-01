@@ -1,4 +1,4 @@
-#lordly-alert-msg-container {
+#lordly-message-container {
     position: fixed;
     top: 0;
     left: 50%;
@@ -13,22 +13,25 @@
     gap: 10px;
 }
 
-#lordly-alert-msg-container::-webkit-scrollbar {
+#lordly-message-container::-webkit-scrollbar {
     display: none;
 }
 
-.lordly-alert-msg-box {
+.lordly-message-box {
     padding: 5px 10px;
     display: flex;
     align-items: center;
     gap: 5px;
     border-radius: 5px;
-    background-color: #fffef8;
-    border: 1px solid #f0f0f0;
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-shadow:
+        -1px -1px 5px #ffffff,
+        -1px -2px 10px #f0f0f0,
+        1px 1px 5px #aeaec066,
+        1px 2px 10px #aeaec033;
 }
 
-.lordly-alert-msg-box__icon {
+.lordly-message-box__icon {
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -39,7 +42,7 @@
     font-size: 18px;
 }
 
-.lordly-alert-msg-box__content {
+.lordly-message-box__content {
     max-width: 240px;
     word-break: break-word;
     flex: 1;
@@ -47,35 +50,35 @@
     color: #393733;
 }
 
-.lordly-alert-msg-box.primary {
-    color: #0061ff;
+.lordly-message-box.primary {
+    color: #4550FE;
 }
 
-.lordly-alert-msg-box.success {
-    color: #0fa75f;
+.lordly-message-box.success {
+    color: #3DB56F;
 }
 
-.lordly-alert-msg-box.error {
-    color: #d32f2f;
+.lordly-message-box.error {
+    color: #9C1F1F;
 }
 
-.lordly-alert-msg-box.danger {
-    color: #e91e63;
+.lordly-message-box.danger {
+    color: #E82557;
 }
 
-.lordly-alert-msg-box.warning {
-    color: #ff9800;
+.lordly-message-box.warning {
+    color: #F4A261;
 }
 
-.lordly-alert-msg-box.info {
-    color: #03a9f4;
+.lordly-message-box.info {
+    color: #4DB8FF;
 }
 
-.lordly-alert-msg-box.show {
+.lordly-message-box.show {
     animation: box-in .4s forwards;
 }
 
-.lordly-alert-msg-box.hide {
+.lordly-message-box.hide {
     animation: box-out .4s forwards;
 }
 

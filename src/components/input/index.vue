@@ -8,12 +8,13 @@
 
         <div class="lordly-input__suffix">
             <Transition name="lordly-input__suffix-item">
-                <LyIcon v-if="inputValue" @click="clearInput">
+                <LyIcon v-if="inputValue" class="lordly-input__suffix-item" @click="clearInput">
                     <Clear />
                 </LyIcon>
             </Transition>
             <Transition name="lordly-input__suffix-item" style="transition-delay: .2s;">
-                <LyIcon v-if="inputValue && props.type === 'password'" @click="togglePassword">
+                <LyIcon v-if="inputValue && props.type === 'password'" class="lordly-input__suffix-item"
+                    @click="togglePassword">
                     <EyeOpen v-if="type === 'password'" />
                     <EyeClose v-if="type === 'text'" />
                 </LyIcon>
@@ -73,23 +74,34 @@ function togglePassword() {
     align-items: center;
     gap: 5px;
     box-sizing: border-box;
-    border: 1px solid #f0f0f0;
-    background-color: #f0f0f0;
     padding: 5px 10px;
     font-size: 14px;
     transition: .4s;
     border-radius: 5px;
+
+    background-color: #fff;
+    box-shadow:
+        -1px -1px 5px #ffffff,
+        1px 1px 5px #aaaaaaaa,
+        -1px -1px 5px transparent inset,
+        1px 1px 5px transparent inset;
 }
 
 .lordly-input:hover {
-    border-color: #e8e8e8;
+    box-shadow:
+        -1px -1px 10px #ffffff,
+        1px 1px 10px #aaaaaaaa,
+        -1px -1px 5px transparent inset,
+        1px 1px 5px transparent inset;
 }
 
 .lordly-input:has(:focus),
 .lordly-input.not-empty {
-    border-color: #0061ff;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow:
+        -1px -1px 5px transparent,
+        1px 1px 5px transparent,
+        -1px -1px 5px #ffffff inset,
+        1px 1px 5px #aaaaaaaa inset;
 }
 
 input {
@@ -118,6 +130,15 @@ input::placeholder {
     display: inline-flex;
     align-items: center;
     gap: 5px;
+}
+
+.lordly-input__suffix-item {
+    cursor: pointer;
+    transition: .2s;
+}
+
+.lordly-input__suffix-item:hover {
+    opacity: .6;
 }
 
 .lordly-input__suffix-item-enter-active,

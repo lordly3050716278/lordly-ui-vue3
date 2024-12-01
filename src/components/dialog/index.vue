@@ -50,12 +50,14 @@ watch(() => props['modelValue'], (visibility) => {
 }
 
 .lordly-dialog__wrapper {
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
     overflow: hidden;
     opacity: 0;
     transform: scale(.95);
     transition: .4s;
+    background-color: #fff;
+    box-shadow:
+        -1px -1px 5px #ffffff,
+        1px 1px 5px #aaaaaaaa;
 }
 
 .lordly-dialog.is-visible>.lordly-dialog__wrapper {

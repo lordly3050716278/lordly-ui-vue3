@@ -64,11 +64,11 @@ const isValid = computed(() => validMap.value[props['prop']])
 }
 
 .lordly-form-item__required {
-    color: #F87171;
+    color: #E82557;
 }
 
 .lordly-form-item__error-msg {
-    color: #F44336;
+    color: #9C1F1F;
     font-size: 12px;
     margin-top: 5px;
     user-select: none;

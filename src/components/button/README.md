@@ -9,6 +9,7 @@
 | `block` | `Boolean` | `false` | `true`、`false` |
 | `plain` | `Boolean` | `false` | `true`、`false` |
 | `disabled` | `Boolean` | `false` | `true`、`false` |
+| `neumorphism` | `Boolean` | `false` | `true`、`false` |
 
 ## 插槽
 

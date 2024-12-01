@@ -32,21 +32,15 @@ lordly-ui-vue3/
 |   |   ├── form-item/                # form-item 组件
 |   |   ├── icon/                     # icon 组件
 |   |   ├── input/                    # input 组件
+|   |   ├── scrollbar/                # scrollbar
 |   |   └── select/                   # select 组件
 |   |   
 |   ├── directives/                   # 指令
 |   |   └── loading/                  # loading 指令
 |   |   
-|   ├── styles/                       # 公共样式
-|   |   ├── colors.css                # 颜色相关样式
-|   |   ├── main.css                  # 样式入口
-|   |   ├── scrollbar.css             # 滚动条样式
-|   |   ├── sizes.css                 # 尺寸相关样式
-|   |   └── time.css                  # 时间相关样式
-|   |   
 |   ├── utils/                        # 工具
-|   |   ├── alert-message/            # alertMessage 提示消息
-|   |   └── click-ripple/             # 点击反馈
+|   |   ├── click-ripple/             # 点击反馈
+|   |   └── message/                  # message 提示消息
 |   |   
 |   └── index.js                      # 入口文件
 |

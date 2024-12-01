@@ -90,13 +90,15 @@ watch(() => props['modelValue'], (visibility) => {
 
 <style scoped>
 .lordly-drawer {
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: var(--w);
     height: var(--h);
     overflow: hidden;
     position: absolute;
     transition: .4s;
+    background-color: #fff;
+    box-shadow:
+        -1px -1px 5px #ffffff,
+        1px 1px 5px #aaaaaaaa;
 }
 
 .lordly-drawer.ltr,
@@ -131,10 +133,10 @@ watch(() => props['modelValue'], (visibility) => {
     transform: translateY(var(--h));
 }
 
-.lordly-drawer.ltr.is-visible,
-.lordly-drawer.rtl.is-visible,
-.lordly-drawer.ttb.is-visible,
-.lordly-drawer.btt.is-visible {
+.lordly-drawer.is-visible,
+.lordly-drawer.is-visible,
+.lordly-drawer.is-visible,
+.lordly-drawer.is-visible {
     transform: translate(0);
 }
 </style>

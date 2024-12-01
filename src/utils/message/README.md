@@ -1,4 +1,4 @@
-# alert-message
+# LyMessage
 
 ## 使用
 
@@ -15,13 +15,13 @@ alertMessage('Hello, world', 'danger', 3000)
 ```
 
 ```javascript
-// 通过 AlertMessage 实例调用对应方法
+// 通过 LyMessage 实例调用对应方法
 
-import { AlertMessage } from 'lordly-ui-vue3'
+import { LyMessage } from 'lordly-ui-vue3'
 
-AlertMessage.primary('Hello, world')
+LyMessage.primary('Hello, world')
 
-AlertMessage.info('Hello, world')
+LyMessage.info('Hello, world')
 
-AlertMessage.error('Hello, world', 3000)
+LyMessage.error('Hello, world', 3000)
 ```
