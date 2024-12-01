@@ -1,5 +1,5 @@
 // 引入样式
-import './styles/main.css'
+import './styles/scrollbar.css'
 
 // button
 import LyButton from './components/button'

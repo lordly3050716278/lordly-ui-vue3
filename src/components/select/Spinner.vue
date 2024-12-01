@@ -31,7 +31,7 @@
 .spinner-circle {
     width: 5px;
     height: 5px;
-    background-color: var(--lordly-color-primary);
+    background-color: #6C8EFB;
 
     border-radius: 100%;
     position: absolute;

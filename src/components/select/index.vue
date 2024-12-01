@@ -126,7 +126,7 @@ const placeholderVisible = computed(() => {
 
 const backdropRef = ref()
 const nextZIndex = computed(() => {
-    if (!backdropRef.value) return 0
+    if (!backdropRef.value || !isFocused.value) return 'inherit'
     return backdropRef.value.zIndex + 1
 })
 
@@ -210,23 +210,24 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
     align-items: center;
     gap: 5px;
     box-sizing: border-box;
-    border: 1px solid var(--lordly-color-white-dark-1);
-    background-color: var(--lordly-color-white-dark-1);
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
     padding: 5px 10px;
-    font-size: var(--lordly-font-size-normal);
-    transition: var(--lordly-t-fast);
+    font-size: 14px;
+    transition: .4s;
+    border-radius: 5px;
     cursor: text;
     position: relative;
 }
 
 .lordly-select.is-hovering {
-    border-color: var(--lordly-color-white-dark-2);
+    border-color: #e8e8e8;
 }
 
 .lordly-select.is-focused,
 .lordly-select:has(.lordly-select__selection) {
-    border-color: var(--lordly-color-primary-dark-1);
-    background-color: var(--lordly-color-white);
+    border-color: #0061ff;
+    background-color: #fff;
 }
 
 .lordly-select__selection-wrapper {
@@ -244,19 +245,19 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
     gap: 5px;
     padding: 5px 10px;
     cursor: default;
-    font-size: var(--lordly-font-size-normal);
-    background-color: var(--lordly-color-white-dark-1);
+    font-size: 14px;
+    background-color: #f5f5f5;
 }
 
 .lordly-select__selection-remove {
-    transition: var(--lordly-t-fast);
+    transition: .4s;
     cursor: pointer;
     border-radius: 50%;
 }
 
 .lordly-select__selection-remove:hover {
-    background-color: var(--lordly-color-danger-light-1);
-    color: var(--lordly-color-white);
+    background-color: #e91e63;
+    color: #fff;
 }
 
 .lordly-select__placeholder {
@@ -270,7 +271,7 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
     text-overflow: ellipsis;
     white-space: nowrap;
     user-select: none;
-    color: var(--lordly-color-black-light-3);
+    color: #b0b0b0;
     cursor: text;
 }
 
@@ -280,7 +281,7 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
 
 .lordly-select__input-wrapper>input {
     all: unset;
-    color: var(--lordly-color-black-light-1);
+    color: #333;
 }
 
 .lordly-select__input-wrapper>span {
@@ -293,8 +294,8 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
 }
 
 .lordly-select__suffix {
-    color: var(--lordly-color-black-light-6);
-    transition: var(--lordly-t-fast);
+    color: #dcd7c9;
+    transition: .4s;
 }
 
 .lordly-select.is-focused>.lordly-select__suffix {
@@ -305,8 +306,9 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
     position: fixed;
     box-sizing: border-box;
     margin-top: 5px;
-    background-color: var(--lordly-color-white-dark-1);
-    transition: var(--lordly-t-fast);
+    background-color: #f0f0f0;
+    transition: .4s;
+    border-radius: 5px;
 }
 
 .lordly-select__option-wrapper::-webkit-scrollbar {
@@ -320,8 +322,8 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: var(--lordly-t-fast);
-    color: var(--lordly-color-black-light-6);
+    transition: .4s;
+    color: #777;
 }
 
 .lordly-select__option>span {
@@ -331,16 +333,16 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
 .lordly-select__option-check {
     opacity: 0;
     transform: scale(0);
-    transition: var(--lordly-t-fast);
+    transition: .4s;
 }
 
 .lordly-select__option:hover {
-    background-color: var(--lordly-color-white-dark-2);
-    color: var(--lordly-color-black);
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 .lordly-select__option.is-selected {
-    color: var(--lordly-color-primary);
+    color: #0061ff;
 }
 
 .lordly-select__option.is-selected>.lordly-select__option-check {

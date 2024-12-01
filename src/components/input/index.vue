@@ -73,27 +73,32 @@ function togglePassword() {
     align-items: center;
     gap: 5px;
     box-sizing: border-box;
-    border: 1px solid var(--lordly-color-white-dark-1);
-    background-color: var(--lordly-color-white-dark-1);
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
     padding: 5px 10px;
-    font-size: var(--lordly-font-size-normal);
-    transition: var(--lordly-t-fast);
+    font-size: 14px;
+    transition: .4s;
+    border-radius: 5px;
 }
 
 .lordly-input:hover {
-    border-color: var(--lordly-color-white-dark-2);
+    border-color: #e8e8e8;
 }
 
 .lordly-input:has(:focus),
 .lordly-input.not-empty {
-    border-color: var(--lordly-color-primary-dark-1);
-    background-color: var(--lordly-color-white);
+    border-color: #0061ff;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 input {
     all: unset;
     flex: 1;
     width: 100%;
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
 }
 
 input[type="password"]::-ms-reveal,
@@ -103,6 +108,9 @@ input[type="password"]::-webkit-outer-spin-button {
     display: none;
 }
 
+input::placeholder {
+    color: #b0b0b0;
+}
 
 .lordly-input__prefix,
 .lordly-input__suffix {

@@ -85,7 +85,7 @@ watch(() => inputValue.value, val => {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    color: var(--lordly-color-black-light-6);
+    color: #393733;
     transition: .2s;
 }
 
@@ -93,12 +93,23 @@ watch(() => inputValue.value, val => {
     height: var(--lordly-checkbox-size);
     width: var(--lordly-checkbox-size);
     background-color: transparent;
-    border: var(--lordly-checkbox-border-width) solid var(--lordly-color-black-light-6);
+    border: var(--lordly-checkbox-border-width) solid;
     border-radius: var(--lordly-checkbox-border-radius);
     position: relative;
     display: inline-block;
     box-sizing: border-box;
-    transition: border-color .2s;
+    transition: .4s;
+}
+
+.lordly-checkbox:hover>.lordly-checkbox__label {
+    border-color: var(--lordly-checkbox-checked-color);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.lordly-checkbox:focus>.lordly-checkbox__label {
+    border-color: var(--lordly-checkbox-checked-color);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
 .lordly-checkbox__label::before,
@@ -200,46 +211,46 @@ watch(() => inputValue.value, val => {
 
 .lordly-checkbox.mini {
     --lordly-checkbox-size: 10px;
-    font-size: var(--lordly-font-size-mini);
+    font-size: 10px;
 }
 
 .lordly-checkbox.small {
     --lordly-checkbox-size: 12px;
-    font-size: var(--lordly-font-size-small);
+    font-size: 12px;
 }
 
 .lordly-checkbox.normal {
     --lordly-checkbox-size: 14px;
-    font-size: var(--lordly-font-size-normal);
+    font-size: 14px;
 }
 
 .lordly-checkbox.large {
     --lordly-checkbox-size: 16px;
-    font-size: var(--lordly-font-size-large);
+    font-size: 16px;
 }
 
 .lordly-checkbox.huge {
     --lordly-checkbox-size: 18px;
-    font-size: var(--lordly-font-size-huge);
+    font-size: 18px;
 }
 
 .lordly-checkbox.primary {
-    --lordly-checkbox-checked-color: var(--lordly-color-primary);
+    --lordly-checkbox-checked-color: #0061ff;
 }
 
 .lordly-checkbox.success {
-    --lordly-checkbox-checked-color: var(--lordly-color-success);
+    --lordly-checkbox-checked-color: #0fa75f;
 }
 
 .lordly-checkbox.danger {
-    --lordly-checkbox-checked-color: var(--lordly-color-danger);
+    --lordly-checkbox-checked-color: #e91e63;
 }
 
 .lordly-checkbox.warning {
-    --lordly-checkbox-checked-color: var(--lordly-color-warning);
+    --lordly-checkbox-checked-color: #ff9800;
 }
 
 .lordly-checkbox.info {
-    --lordly-checkbox-checked-color: var(--lordly-color-info);
+    --lordly-checkbox-checked-color: #03a9f4;
 }
 </style>

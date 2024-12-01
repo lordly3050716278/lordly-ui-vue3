@@ -90,13 +90,13 @@ watch(() => props['modelValue'], (visibility) => {
 
 <style scoped>
 .lordly-drawer {
-    background-color: var(--lordly-color-white);
+    background-color: #fff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: var(--w);
     height: var(--h);
     overflow: hidden;
     position: absolute;
-    transition: .2s;
+    transition: .4s;
 }
 
 .lordly-drawer.ltr,

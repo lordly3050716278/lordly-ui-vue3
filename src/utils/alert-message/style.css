@@ -4,7 +4,7 @@
     left: 50%;
     transform: translateX(-50%);
     overflow: hidden auto;
-    z-index: var(--lordly-z-index-max);
+    z-index: 10000;
     pointer-events: none;
     padding: 10px;
     display: flex;
@@ -22,8 +22,10 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    box-shadow: 0px 0px 5px var(--lordly-color-black-light-3);
-    background-color: var(--lordly-color-white);
+    border-radius: 5px;
+    background-color: #fffef8;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .lordly-alert-msg-box__icon {
@@ -34,47 +36,47 @@
     width: 1em;
     height: 1em;
     fill: currentColor;
-    font-size: var(--lordly-font-size-huge);
+    font-size: 18px;
 }
 
 .lordly-alert-msg-box__content {
     max-width: 240px;
     word-break: break-word;
     flex: 1;
-    font-size: var(--lordly-font-size-normal);
-    color: var(--lordly-color-black-light-3);
+    font-size: 14px;
+    color: #393733;
 }
 
-.lordly-alert-msg-box.primary>.lordly-alert-msg-box__icon {
-    color: var(--lordly-color-primary);
+.lordly-alert-msg-box.primary {
+    color: #0061ff;
 }
 
-.lordly-alert-msg-box.success>.lordly-alert-msg-box__icon {
-    color: var(--lordly-color-success);
+.lordly-alert-msg-box.success {
+    color: #0fa75f;
 }
 
-.lordly-alert-msg-box.error>.lordly-alert-msg-box__icon {
-    color: var(--lordly-color-error);
+.lordly-alert-msg-box.error {
+    color: #d32f2f;
 }
 
-.lordly-alert-msg-box.danger>.lordly-alert-msg-box__icon {
-    color: var(--lordly-color-danger);
+.lordly-alert-msg-box.danger {
+    color: #e91e63;
 }
 
-.lordly-alert-msg-box.warning>.lordly-alert-msg-box__icon {
-    color: var(--lordly-color-warning);
+.lordly-alert-msg-box.warning {
+    color: #ff9800;
 }
 
-.lordly-alert-msg-box.info>.lordly-alert-msg-box__icon {
-    color: var(--lordly-color-info);
+.lordly-alert-msg-box.info {
+    color: #03a9f4;
 }
 
 .lordly-alert-msg-box.show {
-    animation: box-in var(--lordly-t-fast) forwards;
+    animation: box-in .4s forwards;
 }
 
 .lordly-alert-msg-box.hide {
-    animation: box-out var(--lordly-t-fast) forwards;
+    animation: box-out .4s forwards;
 }
 
 @keyframes box-in {

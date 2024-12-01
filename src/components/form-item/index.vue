@@ -52,7 +52,7 @@ const isValid = computed(() => validMap.value[props['prop']])
 .lordly-form-item__label {
     font-weight: 700;
     font-size: 12px;
-    color: var(--lordly-color-dark-light-3);
+    color: #6B7280;
     height: 30px;
     display: inline-flex;
     align-items: center;
@@ -64,11 +64,11 @@ const isValid = computed(() => validMap.value[props['prop']])
 }
 
 .lordly-form-item__required {
-    color: var(--lordly-color-error);
+    color: #F87171;
 }
 
 .lordly-form-item__error-msg {
-    color: var(--lordly-color-error);
+    color: #F44336;
     font-size: 12px;
     margin-top: 5px;
     user-select: none;

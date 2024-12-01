@@ -12,8 +12,8 @@
     align-items: center;
     justify-content: center;
 
-    background-color: var(--lordly-color-backdrop-light);
-    z-index: calc(var(--lordly-z-index-max) - 1);
+    background-color: rgba(255, 255, 255, .96);
+    z-index: 9999;
     border-radius: var(--lordly-v-loading-border-radius);
 }
 
@@ -32,7 +32,7 @@
 .lordly-v-loading-spinner-circle {
     width: 6px;
     height: 6px;
-    background-color: var(--lordly-color-primary);
+    background-color: #216ce7;
 
     border-radius: 100%;
     position: absolute;

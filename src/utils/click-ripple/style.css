@@ -1,13 +1,12 @@
 .lordly-click-ripple {
     position: fixed;
-    z-index: var(--lordly-z-index-max);
+    z-index: 10000;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
     pointer-events: none;
     border: 1px solid;
-    border-color: var(--lordly-color-primary-light-1) var(--lordly-color-success-light-1) var(--lordly-color-danger-light-1) var(--lordly-color-info-light-1);
-    animation: click-ripple var(--lordly-t-fast) forwards;
+    border-color: #1772b4 #20a162 #c21f30 #e2d849;
+    animation: click-ripple .6s forwards;
 }
 
 @keyframes click-ripple {
