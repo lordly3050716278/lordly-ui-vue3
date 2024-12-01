@@ -217,29 +217,26 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
     cursor: text;
     position: relative;
 
-    background-color: #fff;
-    box-shadow:
-        -1px -1px 5px #ffffff,
-        1px 1px 5px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+    background-color: #f0f0f0;
 }
 
 .lordly-select.is-hovering {
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 10px #ffffff,
-        1px 1px 10px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+        2px 2px 8px #cccccc,
+        -2px -2px 8px #ffffff,
+        2px 2px 8px transparent inset,
+        -2px -2px 8px transparent inset;
 }
 
 .lordly-select.is-focused,
 .lordly-select:has(.lordly-select__selection) {
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 5px transparent,
-        1px 1px 5px transparent,
-        -1px -1px 5px #ffffff inset,
-        1px 1px 5px #aaaaaaaa inset;
+        2px 2px 8px transparent,
+        -2px -2px 8px transparent,
+        2px 2px 8px #cccccc inset,
+        -2px -2px 8px #ffffff inset;
 }
 
 .lordly-select__selection-wrapper {
@@ -254,31 +251,31 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
 .lordly-select__selection {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     padding: 5px 10px;
     cursor: default;
     font-size: 14px;
-    background-color: #fff;
+    border-radius: 5px;
+
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 5px #ffffff,
-        1px 1px 5px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+        2px 2px 8px #cccccc,
+        -2px -2px 8px #ffffff;
 }
 
 .lordly-select__selection-remove {
     transition: .4s;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow:
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
 }
 
 .lordly-select__selection-remove:hover {
     box-shadow:
-        -1px -1px 5px #ffffff inset,
-        1px 1px 5px #aaaaaaaa inset;
+        2px 2px 8px transparent,
+        -2px -2px 8px transparent,
+        2px 2px 8px #cccccc inset,
+        -2px -2px 8px #ffffff inset;
+    padding: 2px;
 }
 
 .lordly-select__placeholder {
@@ -302,7 +299,7 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
 
 .lordly-select__input-wrapper>input {
     all: unset;
-    color: #333;
+    color: #333333;
 }
 
 .lordly-select__input-wrapper>span {
@@ -315,7 +312,7 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
 }
 
 .lordly-select__suffix {
-    color: #dcd7c9;
+    color: #b0b0b0;
     transition: .4s;
 }
 
@@ -330,12 +327,10 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
     transition: .4s;
     border-radius: 5px;
 
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 5px #ffffff,
-        1px 1px 5px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+        2px 2px 8px #cccccc,
+        -2px -2px 8px #ffffff;
 }
 
 .lordly-select__option-wrapper::-webkit-scrollbar {
@@ -349,7 +344,7 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #777;
+    color: #333;
     margin-top: 5px;
     transition: .4s;
 }
@@ -366,19 +361,19 @@ watch(selectedValues, () => setTimeout(updateOptionWrapperStyle), { deep: true }
 
 .lordly-select__option:hover {
     box-shadow:
-        -1px -1px 10px #ffffff,
-        1px 1px 10px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+        2px 2px 8px #cccccc,
+        -2px -2px 8px #ffffff,
+        2px 2px 8px transparent inset,
+        -2px -2px 8px transparent inset;
 }
 
 .lordly-select__option.is-selected {
     color: #0061ff;
     box-shadow:
-        -1px -1px 5px transparent,
-        1px 1px 5px transparent,
-        -1px -1px 5px #ffffff inset,
-        1px 1px 5px #aaaaaaaa inset;
+        2px 2px 8px transparent,
+        -2px -2px 8px transparent,
+        2px 2px 8px #cccccc inset,
+        -2px -2px 8px #ffffff inset;
 }
 
 .lordly-select__option.is-selected>.lordly-select__option-check {

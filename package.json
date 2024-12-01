@@ -1,6 +1,6 @@
 {
   "name": "lordly-ui-vue3",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "适用于vue3的UI库",
   "main": "src/index.js",
   "scripts": {

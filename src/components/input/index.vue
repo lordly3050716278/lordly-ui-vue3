@@ -79,29 +79,26 @@ function togglePassword() {
     transition: .4s;
     border-radius: 5px;
 
-    background-color: #fff;
-    box-shadow:
-        -1px -1px 5px #ffffff,
-        1px 1px 5px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+    background-color: #f0f0f0;
 }
 
 .lordly-input:hover {
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 10px #ffffff,
-        1px 1px 10px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+        2px 2px 8px #cccccc,
+        -2px -2px 8px #ffffff,
+        2px 2px 8px transparent inset,
+        -2px -2px 8px transparent inset;
 }
 
 .lordly-input:has(:focus),
 .lordly-input.not-empty {
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 5px transparent,
-        1px 1px 5px transparent,
-        -1px -1px 5px #ffffff inset,
-        1px 1px 5px #aaaaaaaa inset;
+        2px 2px 8px transparent,
+        -2px -2px 8px transparent,
+        2px 2px 8px #cccccc inset,
+        -2px -2px 8px #ffffff inset;
 }
 
 input {

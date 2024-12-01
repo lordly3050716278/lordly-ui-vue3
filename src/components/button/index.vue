@@ -77,40 +77,38 @@ const classNames = [
 }
 
 .lordly-button {
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 5px #ffffff,
-        1px 1px 5px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+        2px 2px 8px #cccccc,
+        -2px -2px 8px #ffffff,
+        2px 2px 8px transparent inset,
+        -2px -2px 8px transparent inset;
 }
 
 .lordly-button:hover {
     box-shadow:
-        -1px -1px 10px #ffffff,
-        1px 1px 10px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+        2px 2px 8px transparent,
+        -2px -2px 8px transparent,
+        2px 2px 8px #cccccc inset,
+        -2px -2px 8px #ffffff inset;
 }
 
 .lordly-button:active {
     box-shadow:
-        -1px -1px 5px transparent,
-        1px 1px 5px transparent,
-        -1px -1px 5px #ffffff inset,
-        1px 1px 5px #aaaaaaaa inset;
+        2px 2px 8px transparent,
+        -2px -2px 8px transparent,
+        2px 2px 4px #cccccc inset,
+        -2px -2px 4px #ffffff inset;
 }
 
 .lordly-button.is-disabled,
 .lordly-button.is-disabled:hover,
 .lordly-button.is-disabled:active {
     cursor: not-allowed;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 5px #ffffff,
-        1px 1px 5px #aaaaaaaa,
-        -1px -1px 5px transparent inset,
-        1px 1px 5px transparent inset;
+        2px 2px 8px #ccccccaa,
+        -2px -2px 8px #ffffff;
 }
 
 .lordly-button.is-block {

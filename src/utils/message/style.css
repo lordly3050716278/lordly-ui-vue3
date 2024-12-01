@@ -23,12 +23,10 @@
     align-items: center;
     gap: 5px;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow:
-        -1px -1px 5px #ffffff,
-        -1px -2px 10px #f0f0f0,
-        1px 1px 5px #aeaec066,
-        1px 2px 10px #aeaec033;
+        2px 2px 8px #cccccc,
+        -2px -2px 8px #ffffff;
 }
 
 .lordly-message-box__icon {
@@ -47,7 +45,7 @@
     word-break: break-word;
     flex: 1;
     font-size: 14px;
-    color: #393733;
+    color: #333;
 }
 
 .lordly-message-box.primary {
